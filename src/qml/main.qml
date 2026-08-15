@@ -60,7 +60,7 @@ CutieWindow {
 					anchors.margins: 6
 					radius: 12
 					color: Atmosphere.secondaryAlphaColor
-					opacity: 0.15
+					opacity: 0.8
 				}
 
 				Column {
@@ -72,6 +72,7 @@ CutieWindow {
 						width: parent.width
 						text: modelData.title
 						font.bold: true
+						font.pixelSize: 16
 						elide: Text.ElideRight
 						maximumLineCount: 1
 						color: Atmosphere.textColor
@@ -83,7 +84,7 @@ CutieWindow {
 						wrapMode: Text.WordWrap
 						maximumLineCount: 2
 						elide: Text.ElideRight
-						opacity:9
+						opacity:0.9
 						font.pixelSize: 13
 						color: Atmosphere.textColor
 					}
