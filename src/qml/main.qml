@@ -83,7 +83,7 @@ CutieWindow {
 						wrapMode: Text.WordWrap
 						maximumLineCount: 2
 						elide: Text.ElideRight
-						opacity: 0.7
+						opacity:9
 						font.pixelSize: 13
 						color: Atmosphere.textColor
 					}
@@ -91,7 +91,7 @@ CutieWindow {
 					CutieLabel {
 						width: parent.width
 						text: Formatting.formatDate(modelData.modified)
-						opacity: 0.4
+						opacity: 0.9
 						font.pixelSize: 11
 						color: Atmosphere.textColor
 					}
