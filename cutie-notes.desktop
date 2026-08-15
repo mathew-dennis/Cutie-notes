@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.2
+Type=Application
+Name=Notes
+Exec=/usr/bin/cutie-notes
+TryExec=/usr/bin/cutie-notes
+Icon=cutie-notes
+Terminal=false
+StartupNotify=false
+Comment=Quick notes
+Categories=Utility;
