@@ -54,6 +54,10 @@ CutiePage {
 			anchors.right: parent.right
 			anchors.verticalCenter: parent.verticalCenter
 			anchors.rightMargin: 15
+			width: 48 
+			height: 48
+			icon.width: 32
+			icon.height: 32
 			icon.name: "edit-delete-symbolic"
 			background: null
 			onClicked: deleteMenu.open()
@@ -85,6 +89,8 @@ CutiePage {
 			width: parent.width
 			wrapMode: TextArea.Wrap
 			placeholderText: qsTr("Note")
+			font.pixelSize: 16
+			color: Atmosphere.textColor
 			background: null
 			onTextChanged: noteView.scheduleSave()
 		}
