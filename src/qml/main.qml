@@ -60,7 +60,7 @@ CutieWindow {
 					anchors.margins: 6
 					radius: 12
 					color: Atmosphere.secondaryAlphaColor
-					opacity: 0.8
+					opacity: 0.9
 				}
 
 				Column {
@@ -69,6 +69,7 @@ CutieWindow {
 					spacing: 4
 
 					CutieLabel {
+						id: titleLabel
 						width: parent.width
 						text: modelData.title
 						font.bold: true
@@ -80,6 +81,8 @@ CutieWindow {
 
 					CutieLabel {
 						width: parent.width
+						height: parent.height - titleLabel.height - dateLabel.height - (parent.spacing * 2)
+						verticalAlignment: Text.AlignTop
 						text: modelData.preview
 						wrapMode: Text.WordWrap
 						maximumLineCount: 2
@@ -90,6 +93,7 @@ CutieWindow {
 					}
 
 					CutieLabel {
+						id: dateLabel
 						width: parent.width
 						text: Formatting.formatDate(modelData.modified)
 						opacity: 0.9
